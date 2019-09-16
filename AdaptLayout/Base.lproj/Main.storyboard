@@ -69,7 +69,7 @@
         <!--Adapt Constraints-->
         <scene sceneID="djn-Fe-qO8">
             <objects>
-                <viewController id="6fB-s8-7ah" customClass="ViewController" customModule="AdaptLayout_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6fB-s8-7ah" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" id="1JF-HP-EqC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
