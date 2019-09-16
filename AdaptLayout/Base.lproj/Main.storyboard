@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ods-lE-uwT">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Adapt Properties-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pmh-fm-GXe">
+                                <rect key="frame" x="137.5" y="64" width="100" height="316"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="VAD-UZ-JYh">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="16x-je-rOb">
+                                        <rect key="frame" x="0.0" y="108" width="100" height="100"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diamond" translatesAutoresizingMaskIntoConstraints="NO" id="pJz-KD-SIQ">
+                                        <rect key="frame" x="0.0" y="216" width="100" height="100"/>
+                                    </imageView>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="topMargin" secondItem="pmh-fm-GXe" secondAttribute="top" id="2sl-YQ-sBH"/>
+                            <constraint firstItem="pmh-fm-GXe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="eYr-RJ-N4B"/>
+                        </constraints>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="20" leading="20" bottom="20" trailing="20"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Adapt Properties" id="AzI-QU-j4S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1960.8" y="-564.46776611694156"/>
+        </scene>
+        <!--Adapt Properties-->
+        <scene sceneID="efv-Gn-VnI">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIg-lP-yHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O2l-b7-FFo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Adapt Properties" id="hVW-ER-2Pt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pps-wB-KOS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PFm-rQ-dMH"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1076" y="-564.46776611694156"/>
+        </scene>
+        <!--Adapt Constraints-->
+        <scene sceneID="djn-Fe-qO8">
+            <objects>
+                <viewController id="6fB-s8-7ah" customClass="ViewController" customModule="AdaptLayout_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" id="1JF-HP-EqC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4c-Ea-sVb" userLabel="Button">
+                                <rect key="frame" x="139" y="64" width="97" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Solar Panel"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="751" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="Irw-Iw-8sa" userLabel="ImageView">
+                                <rect key="frame" x="112.5" y="108" width="150" height="150"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Irw-Iw-8sa" firstAttribute="leading" secondItem="iAT-gp-Frs" secondAttribute="leading" constant="20" id="1ji-6r-mE1"/>
+                            <constraint firstItem="K4c-Ea-sVb" firstAttribute="centerY" secondItem="Irw-Iw-8sa" secondAttribute="centerY" id="25p-bo-iE1"/>
+                            <constraint firstItem="K4c-Ea-sVb" firstAttribute="centerX" secondItem="1JF-HP-EqC" secondAttribute="centerX" id="6H9-Tz-k0r"/>
+                            <constraint firstItem="K4c-Ea-sVb" firstAttribute="leading" secondItem="Irw-Iw-8sa" secondAttribute="trailing" constant="8" id="8Qc-Uz-Fa3"/>
+                            <constraint firstItem="Irw-Iw-8sa" firstAttribute="top" secondItem="K4c-Ea-sVb" secondAttribute="bottom" constant="8" id="O4s-Jm-fIL"/>
+                            <constraint firstItem="K4c-Ea-sVb" firstAttribute="top" secondItem="iAT-gp-Frs" secondAttribute="top" constant="20" id="ez1-0F-5Ah"/>
+                            <constraint firstItem="Irw-Iw-8sa" firstAttribute="top" secondItem="iAT-gp-Frs" secondAttribute="top" constant="20" id="kCG-QZ-QCR"/>
+                            <constraint firstItem="Irw-Iw-8sa" firstAttribute="centerX" secondItem="1JF-HP-EqC" secondAttribute="centerX" id="sFO-Zy-Yb2"/>
+                        </constraints>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="20" leading="20" bottom="20" trailing="20"/>
+                        <viewLayoutGuide key="safeArea" id="iAT-gp-Frs"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="kCG-QZ-QCR"/>
+                                <exclude reference="1ji-6r-mE1"/>
+                                <exclude reference="8Qc-Uz-Fa3"/>
+                                <exclude reference="25p-bo-iE1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="sFO-Zy-Yb2"/>
+                                <include reference="kCG-QZ-QCR"/>
+                                <exclude reference="O4s-Jm-fIL"/>
+                                <include reference="1ji-6r-mE1"/>
+                                <include reference="8Qc-Uz-Fa3"/>
+                                <include reference="25p-bo-iE1"/>
+                                <exclude reference="6H9-Tz-k0r"/>
+                                <exclude reference="ez1-0F-5Ah"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Adapt Constraints" id="6zj-gq-oDT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLg-lQ-yX4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1960.8" y="142.57871064467767"/>
+        </scene>
+        <!--Programmatic Stack View-->
+        <scene sceneID="0xG-Rq-wDJ">
+            <objects>
+                <viewController id="FKI-Ox-KUK" customClass="ProgrammaticStackViewController" customModule="AdaptLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gj9-Qr-aEn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="OLM-yC-9FD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Programmatic Stack View" id="dIi-bb-GP0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aOP-a9-1N2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1961" y="869"/>
+        </scene>
+        <!--Adapt Constraints-->
+        <scene sceneID="iOW-cK-uGG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zeX-LS-SOv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Adapt Constraints" id="EUY-d2-x8S"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aM1-b6-q1X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6fB-s8-7ah" kind="relationship" relationship="rootViewController" id="E9U-70-JFR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FVp-dG-RHu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="142.57871064467767"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="V16-0a-IhQ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ods-lE-uwT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qhl-Kd-KiJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="O2l-b7-FFo" kind="relationship" relationship="viewControllers" id="wre-FG-jRl"/>
+                        <segue destination="zeX-LS-SOv" kind="relationship" relationship="viewControllers" id="Q7S-d2-Nzk"/>
+                        <segue destination="nOR-BV-tnY" kind="relationship" relationship="viewControllers" id="GM9-Xn-elp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k8p-Nb-h24" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="-210.94452773613196"/>
+        </scene>
+        <!--Programmatic Stack View-->
+        <scene sceneID="kWi-Yx-qmg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nOR-BV-tnY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Programmatic Stack View" id="d2P-0x-L8Y"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ENZ-cg-Hyj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FKI-Ox-KUK" kind="relationship" relationship="rootViewController" id="Phw-YC-P42"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JwY-jN-Ha8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="869"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Diamond" width="100" height="100"/>
+        <image name="Heart" width="100" height="100"/>
+        <image name="Star" width="100" height="100"/>
+        <image name="Sun" width="150" height="150"/>
+    </resources>
+</document>
