@@ -30,7 +30,6 @@
                                         <rect key="frame" x="0.0" y="216" width="100" height="100"/>
                                     </imageView>
                                 </subviews>
-                                <variation key="heightClass=compact" axis="horizontal"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -85,33 +84,17 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Irw-Iw-8sa" firstAttribute="leading" secondItem="iAT-gp-Frs" secondAttribute="leading" constant="20" id="1ji-6r-mE1"/>
-                            <constraint firstItem="K4c-Ea-sVb" firstAttribute="centerY" secondItem="Irw-Iw-8sa" secondAttribute="centerY" id="25p-bo-iE1"/>
                             <constraint firstItem="K4c-Ea-sVb" firstAttribute="centerX" secondItem="1JF-HP-EqC" secondAttribute="centerX" id="6H9-Tz-k0r"/>
-                            <constraint firstItem="K4c-Ea-sVb" firstAttribute="leading" secondItem="Irw-Iw-8sa" secondAttribute="trailing" constant="8" id="8Qc-Uz-Fa3"/>
                             <constraint firstItem="Irw-Iw-8sa" firstAttribute="top" secondItem="K4c-Ea-sVb" secondAttribute="bottom" constant="8" id="O4s-Jm-fIL"/>
                             <constraint firstItem="K4c-Ea-sVb" firstAttribute="top" secondItem="iAT-gp-Frs" secondAttribute="top" constant="20" id="ez1-0F-5Ah"/>
-                            <constraint firstItem="Irw-Iw-8sa" firstAttribute="top" secondItem="iAT-gp-Frs" secondAttribute="top" constant="20" id="kCG-QZ-QCR"/>
                             <constraint firstItem="Irw-Iw-8sa" firstAttribute="centerX" secondItem="1JF-HP-EqC" secondAttribute="centerX" id="sFO-Zy-Yb2"/>
                         </constraints>
                         <directionalEdgeInsets key="directionalLayoutMargins" top="20" leading="20" bottom="20" trailing="20"/>
                         <viewLayoutGuide key="safeArea" id="iAT-gp-Frs"/>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="kCG-QZ-QCR"/>
-                                <exclude reference="1ji-6r-mE1"/>
-                                <exclude reference="8Qc-Uz-Fa3"/>
-                                <exclude reference="25p-bo-iE1"/>
-                            </mask>
-                        </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
                                 <exclude reference="sFO-Zy-Yb2"/>
-                                <include reference="kCG-QZ-QCR"/>
                                 <exclude reference="O4s-Jm-fIL"/>
-                                <include reference="1ji-6r-mE1"/>
-                                <include reference="8Qc-Uz-Fa3"/>
-                                <include reference="25p-bo-iE1"/>
                                 <exclude reference="6H9-Tz-k0r"/>
                                 <exclude reference="ez1-0F-5Ah"/>
                             </mask>

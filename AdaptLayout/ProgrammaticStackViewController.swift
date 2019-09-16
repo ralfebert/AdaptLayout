@@ -46,13 +46,7 @@ final class ProgrammaticStackViewController: UIViewController {
         self.setupView()
     }
 
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        if previousTraitCollection?.verticalSizeClass !=
-            traitCollection.verticalSizeClass {
-            self.configureView(for: traitCollection)
-        }
-    }
+    // TODO: traitCollectionDidChange überschreiben und bei veränderter verticalSizeClass stackView.axis setzen
 
     private func setupView() {
         view.addSubview(self.stackView)
@@ -64,14 +58,6 @@ final class ProgrammaticStackViewController: UIViewController {
         ])
     }
 
-    private func configureView(for traitCollection: UITraitCollection) {
-        switch traitCollection.verticalSizeClass {
-            case .compact:
-                self.stackView.axis = .horizontal
-            default:
-                self.stackView.axis = .vertical
-        }
-    }
 }
 
 extension ProgrammaticStackViewController {
@@ -83,20 +69,6 @@ extension ProgrammaticStackViewController {
         static let transform = CGAffineTransform(scaleX: Self.transformScale, y: Self.transformScale)
     }
 
-    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.willTransition(to: newCollection, with: coordinator)
-        if traitCollection.verticalSizeClass != newCollection.verticalSizeClass {
-            self.animateStack(with: coordinator)
-        }
-    }
+    // TODO: willTransition(to:with:) implementieren und via coordinator.animate() StackView-Pop-Effekt implementieren (wird größer während des Übergangs und danach wieder kleiner)
 
-    private func animateStack(with coordinator: UIViewControllerTransitionCoordinator) {
-        coordinator.animate(alongsideTransition: { _ in
-            self.stackView.transform = AnimationMetrics.transform
-        }, completion: { _ in
-            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: AnimationMetrics.duration, delay: 0, options: [], animations: {
-                self.stackView.transform = .identity
-            })
-        })
-    }
 }
